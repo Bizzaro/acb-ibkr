@@ -14,18 +14,14 @@ python3 -m venv virtual-env
 source virtual-env/bin/activate
 ```
 
-2. Clone the cad-capital-gains repo or install from git repo into pip 
+2. Install deps 
 ```
-pip3 install <PATH TO cad-capital-gains>
-
-or 
-
-pip3 install git+https://github.com/Bizzaro/cad-capital-gains.git
+pip3 install -r requirements.txt
 ```
+
 3. `python3 ibkr.py <CSV NAME>`
 
 4. `capgains calc eggs.csv 2021`
-
 
 ### DISCLAIMER
 YOU (THE USER OF THIS SCRIPT) ARE RESPONSIBLE FOR THE NUMBERS PRODUCED BY THIS TOOL. IT HAS NOT BEEN AUDITED OR VERIFIED BY A THIRD PARTY. THIS IS NOT TAX ADVICE OR CERTIFIED TAX SOFTWARE. DOING RANDOM SPOT CHECKS OF CALCULATIONS IS RECOMMENDED. CONSULT A CPA FOR ALL YOUR TAX INQUIRIES.
