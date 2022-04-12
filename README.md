@@ -23,14 +23,14 @@ source virtual-env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-3. Generate a compatible `cad-capital-gains` compatible `.csv.`
+3. Generate a compatible `cad-capital-gains` compatible `.csv`
 ```
 python3 ibkr.py <CSV NAME>
 ```
 
 4. Run the `capgains` (cad-capital-gains) tool
 ```
-capgains calc eggs.csv 2021`
+capgains calc eggs.csv 2021
 ```
 
 ### DISCLAIMER
