@@ -2,15 +2,15 @@
 
 Parses annual activity statement in `.csv` from IBKR, automatically calculates correct ACB for Schedule 3.
 
+For use with https://github.com/Bizzaro/cad-capital-gains.
+![](2022-04-11-22-28-54.png)
+
 ## Why?
 T5008 is inaccurate even using a single broker. Fractional shares are not included in calculations, exchange rates are also not BoC rates. This is common knowledge amongst CPAs and also the CRA itself.
 
 ## How to use
 Sign in to client portal, then go 
 `Reports > Statements > Activity > Period: Annual > Format: CSV > Run`
-
-For use with https://github.com/Bizzaro/cad-capital-gains.
-![](2022-04-11-22-28-54.png)
 
 1. Create virtual env 
 ```
