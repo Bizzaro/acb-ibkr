@@ -23,9 +23,15 @@ source virtual-env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-3. `python3 ibkr.py <CSV NAME>`
+3. Generate a compatible `cad-capital-gains` compatible `.csv.`
+```
+python3 ibkr.py <CSV NAME>
+```
 
-4. `capgains calc eggs.csv 2021`
+4. Run the `capgains` (cad-capital-gains) tool
+```
+capgains calc eggs.csv 2021`
+```
 
 ### DISCLAIMER
 YOU (THE USER OF THIS SCRIPT) ARE RESPONSIBLE FOR THE NUMBERS PRODUCED BY THIS TOOL. IT HAS NOT BEEN AUDITED OR VERIFIED BY A THIRD PARTY. THIS IS NOT TAX ADVICE OR CERTIFIED TAX SOFTWARE. DOING RANDOM SPOT CHECKS OF CALCULATIONS IS RECOMMENDED. CONSULT A CPA FOR ALL YOUR TAX INQUIRIES.
