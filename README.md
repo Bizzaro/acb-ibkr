@@ -4,6 +4,8 @@ Parses annual activity statement in `.csv` from IBKR, manually calculates ACB fo
 Sign in to client portal, then go 
 `Reports > Statements > Activity > Period: Annual > Format: CSV > Run`
 
+For use with https://github.com/Bizzaro/cad-capital-gains.
+
 1. Create virtual env 
 ```
 python3 -m venv virtual-env 
