@@ -28,11 +28,11 @@ with open(IBKR_FILENAME, newline='') as ibkr_csv_file:
                 action = "SELL"
                 
             if (DEBUG):
-                print(f"{converted_date} {ticker} {ticker} {action} {quantity} {proceeds/quantity} {fee} {currency}")
+                print(f"{converted_date} {ticker} {action} {quantity} {proceeds/quantity} {fee} {currency}")
             price = proceeds/quantity
             TX_ARRAY.append([converted_date, "", ticker, action, quantity, price, fee, currency])
     ibkr_csv_file.close()
-    
+
 def takeFirst(elem):
     return elem[0]
 
