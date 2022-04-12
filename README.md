@@ -1,6 +1,9 @@
 # IBKR
 
-Parses annual activity statement in `.csv` from IBKR, manually calculates ACB for Schedule 3. T5008 is inaccurate even using a single broker. Fractional shares are not included in calculations, exchange rates are also not BoC rates.
+Parses annual activity statement in `.csv` from IBKR, manually calculates ACB for Schedule 3.
+
+## Why?
+T5008 is inaccurate even using a single broker. Fractional shares are not included in calculations, exchange rates are also not BoC rates. This is common knowledge amongst CPAs and also the CRA itself.
 
 Sign in to client portal, then go 
 `Reports > Statements > Activity > Period: Annual > Format: CSV > Run`
