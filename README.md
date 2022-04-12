@@ -1,4 +1,4 @@
-# IBKR
+# acb-ibkr
 
 Parses annual activity statement in `.csv` from IBKR, automatically calculates correct ACB for Schedule 3.
 
