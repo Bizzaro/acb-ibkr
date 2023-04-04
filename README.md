@@ -13,10 +13,10 @@ T5008 is inaccurate even using a single broker. Fractional shares are not includ
 ```
 Performance & Reports > Statements > Activity > Period: Annual > Download the CSV
 ```
-2. Place it in `./source`V > Run`
+2. Place it in `./source`
 3. Update the year in `launch.sh` and run it!
 4. Look for a new file called `schedule3-XXXX.csv` to import
-5. Options trades are excluded from this `csv` and need to be entered manually.
+> Options trades are excluded from this `csv` and need to be entered manually.
 
 ## How to use
 1. Sign in to client portal, then go: 
