@@ -9,8 +9,10 @@ For use with https://github.com/Bizzaro/cad-capital-gains.
 T5008 is inaccurate even using a single broker. Fractional shares are not included in calculations, exchange rates are also not BoC rates. This is common knowledge amongst CPAs and also the CRA itself.
 
 ## How to use
-Sign in to client portal, then go 
-`Reports > Statements > Activity > Period: Annual > Format: CSV > Run`
+1. Sign in to client portal, then go: 
+```
+Reports > Statements > Activity > Period: Annual > Format: CSV > Run
+```
 
 1. Create virtual env 
 ```
@@ -23,12 +25,14 @@ source virtual-env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-3. Generate a compatible `cad-capital-gains` compatible `.csv`
+3. Drop all your `.csv`'s from every year into the `./source` folder.
+
+4. Generate a compatible `cad-capital-gains` compatible `.csv`
 ```
-python3 ibkr.py <CSV NAME>
+python3 ibkr.py
 ```
 
-4. Run the `capgains` (cad-capital-gains) tool
+5. Run the `capgains` (cad-capital-gains) tool
 ```
 capgains calc eggs.csv 2021
 ```

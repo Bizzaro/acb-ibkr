@@ -2,9 +2,8 @@ import csv, sys
 import os
 from datetime import datetime
 
-DEBUG = True
+DEBUG = False
 TX_ARRAY = []
-
 
 IBKR_CSV_FILES_IN_SOURCE = os.listdir("./source")
 
@@ -35,14 +34,12 @@ for filename in IBKR_CSV_FILES_IN_SOURCE:
                     print(f"{converted_date} {instrument} {ticker} {action} {quantity} {proceeds/quantity} {fee} {currency}")
                 price = proceeds/quantity
                 TX_ARRAY.append([converted_date, instrument, ticker, action, quantity, price, fee, currency])
-        ibkr_csv_file.close()
 
 def takeFirst(elem):
     return elem[0]
 
 TX_ARRAY.sort(key=takeFirst)
-with open(f'TX_LOG_CLEANED-MASTER.csv', 'w', newline='') as tx_output_file:
+
+with open(f'TX_LOG_CLEANED_MASTER.csv', 'w', newline='') as tx_output_file:
     tx_log_for_capgains = csv.writer(tx_output_file, delimiter=',')
-    for x in range(len(TX_ARRAY)):
-        tx_log_for_capgains.writerow(TX_ARRAY[x])
-    tx_output_file.close()
+    tx_log_for_capgains.writerows(TX_ARRAY)
