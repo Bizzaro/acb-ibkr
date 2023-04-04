@@ -20,7 +20,7 @@ python3 -m venv virtual-env
 source virtual-env/bin/activate
 ```
 
-2. Installs [cad-capital-gain](https://github.com/Bizzaro/cad-capital-gains) fork
+2. This installs my [cad-capital-gain](https://github.com/Bizzaro/cad-capital-gains) fork
 ```
 pip3 install -r requirements.txt
 ```
