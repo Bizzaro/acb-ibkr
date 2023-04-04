@@ -40,6 +40,6 @@ def takeFirst(elem):
 
 TX_ARRAY.sort(key=takeFirst)
 
-with open(f'TX_LOG_CLEANED_MASTER.csv', 'w', newline='') as tx_output_file:
+with open(f'master.csv', 'w', newline='') as tx_output_file:
     tx_log_for_capgains = csv.writer(tx_output_file, delimiter=',')
     tx_log_for_capgains.writerows(TX_ARRAY)

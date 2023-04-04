@@ -20,7 +20,7 @@ python3 -m venv virtual-env
 source virtual-env/bin/activate
 ```
 
-2. Install deps 
+2. Installs [cad-capital-gain](https://github.com/Bizzaro/cad-capital-gains) fork
 ```
 pip3 install -r requirements.txt
 ```
@@ -34,7 +34,7 @@ python3 ibkr.py
 
 5. Run the `capgains` (cad-capital-gains) tool
 ```
-capgains calc eggs.csv 2021
+capgains calc master.csv 2022
 ```
 
 ### DISCLAIMER
