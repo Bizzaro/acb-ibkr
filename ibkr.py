@@ -5,6 +5,12 @@ from datetime import datetime
 DEBUG = False
 TX_ARRAY = []
 
+
+def ibkr_float(s):
+    """IBKR activity CSVs use comma thousands separators (e.g. '1,000')."""
+    return float(s.replace(",", ""))
+
+
 IBKR_CSV_FILES_IN_SOURCE = os.listdir("./source")
 
 for filename in IBKR_CSV_FILES_IN_SOURCE:
@@ -19,10 +25,10 @@ for filename in IBKR_CSV_FILES_IN_SOURCE:
                 currency = row[4]
                 ticker = row[5]
                 date = row[6]
-                quantity = float(row[7])
-                proceeds = float(row[10])
-                fee = float(row[11])
-                basis_includes_fee = float(row[12])
+                quantity = ibkr_float(row[7])
+                proceeds = ibkr_float(row[10])
+                fee = ibkr_float(row[11])
+                basis_includes_fee = ibkr_float(row[12])
                 converted_date = datetime.strptime(date, '%Y-%m-%d, %H:%M:%S').date()
             
                 if (quantity > 0):
